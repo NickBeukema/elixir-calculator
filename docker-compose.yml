@@ -1,0 +1,8 @@
+version: '3'
+services:
+
+  elixir:
+    build: .
+    entrypoint: /bin/sh entryfile.sh
+    volumes:
+      - .:/work
